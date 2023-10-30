@@ -4,16 +4,13 @@
     {
         static void Main(string[] args)
         {
-            string charecterName = "Tom";
-            int charecterAge = 25;
+            string phrase = "Giraffe Accademy";
+            char grade = 'A';
+            int age = -30;
+            double gpa = 3.2; //float, double, decimal
+            bool isFemale = true;
 
-            Console.WriteLine("There once was a man named " + charecterName);
-            Console.WriteLine("He was " + charecterAge + " years old");
-
-            charecterName = "Mike";
-            Console.WriteLine("He really liked the name " + charecterName);
-            Console.WriteLine("But didn't like being " + charecterAge);
-
+            Console.WriteLine(age);
 
             Console.ReadLine();
         }
