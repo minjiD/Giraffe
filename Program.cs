@@ -4,20 +4,28 @@
     {
         static void Main(string[] args)
         {
-            //Return Statements
-            //Console.WriteLine(cube(5));
+            //If Statements
+            bool isFemale = false;
+            bool isTall = true;
 
-            int cubeNumber = cube(5);
-            Console.WriteLine(cubeNumber);
+            if (isFemale && isTall)
+            {
+                Console.WriteLine("You are a tall female");
+            } 
+            else if (isFemale && !isTall) {
+                Console.WriteLine("You are a short female");
+            }
+            else if (!isFemale && isTall)
+            {
+                Console.WriteLine("You are not a female but you are tall");
+            }
+            else
+            {
+                Console.WriteLine("You are either not female or not tall or both");
+            }
 
             Console.ReadLine();
         }
 
-        static int cube(int num)
-        {
-            int result = num * num * num;
-            
-            return result;
-        }
     }
 }
