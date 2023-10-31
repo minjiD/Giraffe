@@ -4,17 +4,17 @@
     {
         static void Main(string[] args)
         {
-            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
-            //luckyNumbers[1] = 900;
-
-            string[] friends = new string[5];
-            friends[0] = "Jim";
-            friends[1] = "Kelly";
-            
-            Console.WriteLine(luckyNumbers[1]);
-            Console.WriteLine(friends[1]);
+            //Methods
+            SayHi("Mike", 33);
+            SayHi("John", 56);
+            SayHi("Tom",12);
 
             Console.ReadLine();
+        }
+
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("Hello " + name + " you are " + age);
         }
     }
 }
