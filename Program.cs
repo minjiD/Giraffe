@@ -4,22 +4,16 @@
     {
         static void Main(string[] args)
         {
-            //Mad Libs Game
-            string color, pluralNoun, celebrity;
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+            //luckyNumbers[1] = 900;
 
-            Console.Write("Enter a color: ");
-            color = Console.ReadLine();
-
-            Console.Write("Enter a plural noun: ");
-            pluralNoun = Console.ReadLine();
-
-            Console.Write("Enter a celebrity: ");
-            celebrity = Console.ReadLine();
-
-            Console.WriteLine("Roses are " + color);
-            Console.WriteLine(pluralNoun + " are blue");
-            Console.WriteLine("I Love " + celebrity);
+            string[] friends = new string[5];
+            friends[0] = "Jim";
+            friends[1] = "Kelly";
             
+            Console.WriteLine(luckyNumbers[1]);
+            Console.WriteLine(friends[1]);
+
             Console.ReadLine();
         }
     }
