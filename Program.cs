@@ -4,30 +4,38 @@
     {
         static void Main(string[] args)
         {
-            //If Statements
-            Console.WriteLine(GetMax(2, 10, 15));
+            //Building a Better Calculator
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.ReadLine();
-        }
+            Console.Write("Enter Operator: ");
+            string op = Console.ReadLine();
+            
+            Console.Write("Enter a number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
-        static int GetMax(int num1, int num2, int num3)
-        {
-            int result;
-
-            if (num1 >= num2 && num1 >= num3)
+            if(op == "+")
             {
-                result = num1;
+                Console.WriteLine(num1 + num2);
             }
-            else if(num2 >= num1 && num2 >= num3)
+            else if(op == "-")
             {
-                result = num2;
+                Console.WriteLine(num1 - num2);
+            }
+            else if(op == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            }
+            else if(op == "*")
+            {
+                Console.WriteLine(num1 * num2);
             }
             else
             {
-                result = num3;
+                Console.WriteLine("Invalid Operator");
             }
 
-            return result;
+            Console.ReadLine();
         }
 
     }
