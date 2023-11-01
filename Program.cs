@@ -4,33 +4,12 @@
     {
         static void Main(string[] args)
         {
-            //Building a Guessing Game
-            string secretWord = "giraffe";
-            string guess = "";
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool outOfGuesses = false;
+            //For Loops
+            int[] luckyNumber = { 4, 8, 15, 16, 23, 42 };
 
-            while(guess != secretWord && !outOfGuesses)
+            for(int i = 1; i <= luckyNumber.Length; i++)
             {
-                if(guessCount < guessLimit)
-                {
-                    Console.Write("Enter guess: ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-                }
-                else
-                {
-                    outOfGuesses = true;
-                }
-            }
-            if (outOfGuesses)
-            {
-                Console.Write("You Lose!");
-            }
-            else
-            {
-                Console.Write("You Win!");
+                Console.WriteLine(luckyNumber[i]);
             }
             
             Console.ReadLine();
