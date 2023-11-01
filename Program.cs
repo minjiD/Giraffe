@@ -5,26 +5,29 @@
         static void Main(string[] args)
         {
             //If Statements
-            bool isFemale = false;
-            bool isTall = true;
+            Console.WriteLine(GetMax(2, 10, 15));
 
-            if (isFemale && isTall)
+            Console.ReadLine();
+        }
+
+        static int GetMax(int num1, int num2, int num3)
+        {
+            int result;
+
+            if (num1 >= num2 && num1 >= num3)
             {
-                Console.WriteLine("You are a tall female");
-            } 
-            else if (isFemale && !isTall) {
-                Console.WriteLine("You are a short female");
+                result = num1;
             }
-            else if (!isFemale && isTall)
+            else if(num2 >= num1 && num2 >= num3)
             {
-                Console.WriteLine("You are not a female but you are tall");
+                result = num2;
             }
             else
             {
-                Console.WriteLine("You are either not female or not tall or both");
+                result = num3;
             }
 
-            Console.ReadLine();
+            return result;
         }
 
     }
