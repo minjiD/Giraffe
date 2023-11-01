@@ -4,22 +4,35 @@
     {
         static void Main(string[] args)
         {
-            //While Loops
-            int index = 1;
-            while (index <= 5)
+            //Building a Guessing Game
+            string secretWord = "giraffe";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
+
+            while(guess != secretWord && !outOfGuesses)
             {
-                Console.WriteLine(index);
-                index++;
+                if(guessCount < guessLimit)
+                {
+                    Console.Write("Enter guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
             }
-
-            //Do While Loops
-            int idx = 6;
-            do
+            if (outOfGuesses)
             {
-                Console.WriteLine(idx);
-                idx++;
-            } while(idx <= 5);
-
+                Console.Write("You Lose!");
+            }
+            else
+            {
+                Console.Write("You Win!");
+            }
+            
             Console.ReadLine();
         }
 
