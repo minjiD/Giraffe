@@ -4,11 +4,12 @@
     {
         static void Main(string[] args)
         {
-            //Static Methods & Classes
-            //Console.WriteLine(Math.Sqrt(144));
+            //Inheritance
+            Chef chef = new Chef();
+            chef.MakeSpecialDish();
 
-            //UsefulTools tool = new UsefulTools(); // 정적 클래스 인스턴스 생성 X
-            UsefulTools.SayHi("Mike");
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeSpecialDish();
 
             Console.ReadLine();
         }
