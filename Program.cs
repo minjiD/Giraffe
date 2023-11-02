@@ -4,13 +4,11 @@
     {
         static void Main(string[] args)
         {
-            //Static Class Attributes
-            Song holiday = new Song("Holiday", "Green Day", 200);
-            Console.WriteLine(Song.songCount);
-            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
-            Console.WriteLine(kashmir.getSongCount());
-            
-            Console.WriteLine(kashmir.title);
+            //Static Methods & Classes
+            //Console.WriteLine(Math.Sqrt(144));
+
+            //UsefulTools tool = new UsefulTools(); // 정적 클래스 인스턴스 생성 X
+            UsefulTools.SayHi("Mike");
 
             Console.ReadLine();
         }
