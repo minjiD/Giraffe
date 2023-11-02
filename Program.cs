@@ -4,22 +4,18 @@
     {
         static void Main(string[] args)
         {
-            //Building an Exponent Method
-            Console.WriteLine(GetPow(4, 3));
+            //2d Arrays
+            int[,] numberGrid = {
+                { 1, 2},
+                { 3, 4},
+                { 5, 6}
+            };
+
+            int[,] myArray = new int[2, 3];
+
+            Console.WriteLine(numberGrid[0, 0]);
             
             Console.ReadLine();
-        }
-
-        static int GetPow(int baseNum, int powNum)
-        {
-            int result = 1;
-
-            for(int i = 0; i < powNum; i++ )
-            {
-                result = result * baseNum;
-            }
-
-            return result;
         }
 
     }
