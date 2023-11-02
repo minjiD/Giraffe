@@ -4,14 +4,12 @@
     {
         static void Main(string[] args)
         {
-            //Constructors
-            Book book1 = new Book("Harry Potter", "JK Rowling", 400); // calling constructor
-            Book book2 = new Book("Lord Of the Rings", "Tolkein", 700); // calling constructors
-            Book book3 = new Book();
+            //Object Methods
+            Student student1 = new Student("Jim", "Business", 2.8);
+            Student student2 = new Student("Pam", "Art", 3.6);
 
-            book2.title = "The hobbit";
-
-            Console.WriteLine(book2.title);
+            Console.WriteLine(student1.HasHonors());
+            Console.WriteLine(student2.HasHonors());
 
             Console.ReadLine();
         }
